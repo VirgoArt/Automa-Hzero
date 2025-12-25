@@ -1,0 +1,12 @@
+// tiny wrapper with default env vars
+module.exports = {
+  NODE_ENV: process.env.NODE_ENV || 'development',
+  PORT: process.env.PORT || 3001,
+  BROWSER: process.env.BROWSER || 'chrome',
+  HZERO_PATH: process.env.HZERO_PATH || 'HZERO_PATH',
+  HZERO_AUTOMA_CLIEN_ID: process.env.HZERO_AUTOMA_CLIEN_ID || 'HZERO_AUTOMA_CLIEN_ID',
+  HZERO_AUTOMA_CLIEN_KEY: process.env.HZERO_AUTOMA_CLIEN_KEY || 'HZERO_AUTOMA_CLIEN_KEY',
+  HZERO_INTERFACE_CODE: process.env.HZERO_INTERFACE_CODE || 'HZERO_INTERFACE_CODE',
+  HZERO_INTERFACE_LIST: process.env.HZERO_INTERFACE_LIST || 'HZERO_INTERFACE_LIST',
+  HZERO_INTERFACE_CONFIG: process.env.HZERO_INTERFACE_CONFIG || 'HZERO_INTERFACE_CONFIG',
+};
