@@ -153,7 +153,7 @@ export function importWorkflow(attrs = {}) {
         files.forEach((file) => {
           const reader = new FileReader();
           reader.onload = async ({ target }) => {
-            const res = await handleOnLoadReader(JSON.parse(target), { duplicateId: true });
+            const res = await handleOnLoadReader(JSON.parse(target.result), { duplicateId: true });
             resolve(res);
           };
           reader.readAsText(file);
